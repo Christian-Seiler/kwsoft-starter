@@ -1,0 +1,39 @@
+<TestCases xmlns="urn:kwsoft:mtext:tonic:dom" activeTestCase="Testfall">
+ <TestCase name="Testfall" includeInRegressionTool="false">
+  <Root base="MyOMS">
+   <RootPartInstance partIndex="0">
+    <Data>
+     <DataNode name="Brief">
+      <Value><![CDATA[string:]]></Value>
+      <DataNode name="type" valueChanged="fromDataSource">
+       <Value><![CDATA[string:]]></Value>
+      </DataNode>
+      <DataNode name="id" valueChanged="fromDataSource">
+       <Value><![CDATA[string:101010]]></Value>
+      </DataNode>
+      <DataNode name="betreff1" valueChanged="fromDataSource">
+       <Value><![CDATA[string:Bla]]></Value>
+      </DataNode>
+      <DataNode name="betreff2" valueChanged="fromDataSource">
+       <Value><![CDATA[string:bla...]]></Value>
+      </DataNode>
+      <DataNode name="Dokument">
+       <DataNode name="Datum">
+        <Value><![CDATA[date:Jun 13, 2023, 2:18:43 PM]]></Value>
+       </DataNode>
+       <DataNode name="Anrede">
+        <Value><![CDATA[string:Liebe Kundin, lieber Kunde]]></Value>
+       </DataNode>
+      </DataNode>
+     </DataNode>
+     <DataNode name="Metadata" valueChanged="fromDataSource">
+      <Value><![CDATA[string:]]></Value>
+     </DataNode>
+    </Data>
+   </RootPartInstance>
+  </Root>
+  <DataSourceProperties>
+   <Property value="\\MyOMS\Testdaten\Kunde.xml" name="Brief.FILE_NAME"></Property>
+  </DataSourceProperties>
+ </TestCase>
+</TestCases>

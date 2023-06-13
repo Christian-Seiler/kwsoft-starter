@@ -1,0 +1,218 @@
+<RootPart xmlns="urn:kwsoft:mtext:tonic:dom" id="\library\MyOMS\Vorlagen\Vorlage.template" description="Willkommen bei der Sam AG">
+ <DataDefinition>
+  <ParamDef name="Brief" ref="\\MyOMS\Daten\Brief.datamodel" dataMappingRef="Daten\Brief.mapping">
+   <Description></Description>
+   <Input text-prefix="" text-suffix=""></Input>
+   <Output text-prefix="" text-suffix=""></Output>
+  </ParamDef>
+ </DataDefinition>
+ <UIContribution>
+  <GuideArea>
+   <ContentLink title="Empfänger" targetId="" dataNode="$Brief.Kunde.Anrede"></ContentLink>
+   <ContentLink title="Betreff" targetId="" dataNode="$Brief.Dokument.Betreff1"></ContentLink>
+   <ContentLink title="freier Text" targetId="Freitext"></ContentLink>
+  </GuideArea>
+  <InputArea>
+   <Group title="Empfänger">
+    <Field dataNode="$Brief.Kunde.Anrede"></Field>
+    <Field dataNode="$Brief.Kunde.Titel"></Field>
+    <Field dataNode="$Brief.Kunde.Vorname"></Field>
+    <Field dataNode="$Brief.Kunde.Nachname"></Field>
+    <Field dataNode="$Brief.Kunde.Strasse"></Field>
+    <Field dataNode="$Brief.Kunde.PLZ"></Field>
+    <Field dataNode="$Brief.Kunde.Ort"></Field>
+   </Group>
+   <Group title="Betreff">
+    <Field dataNode="$Brief.Dokument.Betreff1"></Field>
+    <Field dataNode="$Brief.Dokument.Betreff2"></Field>
+   </Group>
+  </InputArea>
+ </UIContribution>
+ <ModificationRights>
+  <Allowed>
+   <ModificationRight role="_EVERYONE_" operations="EDIT,INPUT"></ModificationRight>
+  </Allowed>
+  <Denied></Denied>
+ </ModificationRights>
+ <Document>
+  <Section>
+   <Style parentName="Brief"></Style>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Logo</RegionRef>
+    </Style>
+    <Image uri="mtx:Grafiken/SAM.jpg"></Image>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Absender</RegionRef>
+    </Style>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>9.0pt</FontSize>
+      </Style>
+      <Text>sam AG - Alfred-Döblin-Platz 59 - 79100 Freiburg</Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Empfänger</RegionRef>
+    </Style>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Data>$Brief.Kunde.Titel</Data>
+      <Text> </Text>
+      <Data>$Brief.Kunde.Vorname</Data>
+      <Text> </Text>
+      <Data>$Brief.Kunde.Nachname</Data>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Data>$Brief.Kunde.Strasse</Data>
+      <Text></Text>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Data>$Brief.Kunde.PLZ</Data>
+      <Text> </Text>
+      <Data>$Brief.Kunde.Ort</Data>
+      <Text></Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Betreff</RegionRef>
+    </Style>
+    <Par>
+     <Span>
+      <Data>$Brief.Dokument.Betreff1</Data>
+     </Span>
+    </Par>
+    <Par>
+     <Span>
+      <Data>$Brief.Dokument.Betreff2</Data>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Datum</RegionRef>
+    </Style>
+    <Par>
+     <Span>
+      <Data>$Brief.Dokument.Datum</Data>
+      <Text></Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <StaticContainer>
+    <Style>
+     <RegionRef>Header</RegionRef>
+    </Style>
+    <Par>
+     <Span>
+      <Style>
+       <FontSize>11.0pt</FontSize>
+      </Style>
+      <Text>Seite </Text>
+      <PageNumber></PageNumber>
+      <Text> von </Text>
+      <PageCount></PageCount>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <Container>
+    <Par>
+     <Span>
+      <Data>$Brief.Dokument.Anrede</Data>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+   <StaticContainer>
+    <Style>
+     <RegionRef>HRA</RegionRef>
+    </Style>
+    <Par>
+     <Style>
+      <Align>center</Align>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Text>Handelsregister Amtsgericht Freiburg HRB 5674321 Sitz der Gesellschaft: Freiburg Umsatzsteuer-Identifikationsnummer DE 5674321</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style>
+      <Align>center</Align>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Text>Vorstand Dr. Michaela Brandner (Vorsitzende) George Freeth (stv. Vorsitzender) Franziska Bencke Dr. Thomas Sarbacher Markus Münch</Text>
+     </Span>
+    </Par>
+    <Par>
+     <Style>
+      <Align>center</Align>
+     </Style>
+     <Span>
+      <Style>
+       <FontSize>7.0pt</FontSize>
+      </Style>
+      <Text>Vorsitzende des Aufsichtsrats: Paula Börner</Text>
+     </Span>
+    </Par>
+   </StaticContainer>
+   <Container id="Freitext">
+    <Par>
+     <Span>
+      <Text></Text>
+     </Span>
+    </Par>
+   </Container>
+  </Section>
+ </Document>
+</RootPart>

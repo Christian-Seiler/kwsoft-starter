@@ -1,0 +1,46 @@
+<PageLayout xmlns="urn:kwsoft:mtext:tonic:dom">
+ <PageSize name="A4"></PageSize>
+ <RendererMetadata></RendererMetadata>
+ <Region name="Logo">
+  <Left distance="15.0cm" anchorSide="same"></Left>
+  <Top distance="2.0cm" anchorSide="same"></Top>
+  <Right distance="2.0cm" anchorSide="same"></Right>
+  <Bottom distance="714331.0mpt" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="Absender">
+  <Left distance="2.0cm" anchorSide="same"></Left>
+  <Top distance="2.7cm" anchorSide="same"></Top>
+  <Right distance="10.5cm" anchorSide="opposite"></Right>
+  <Bottom distance="3.2cm" anchorSide="opposite"></Bottom>
+ </Region>
+ <Region name="Empfänger">
+  <Left distance="2.0cm" anchorSide="same"></Left>
+  <Top distance="3.2cm" anchorSide="same"></Top>
+  <Right distance="10.5cm" anchorSide="opposite"></Right>
+  <Bottom distance="6.25cm" anchorSide="opposite"></Bottom>
+ </Region>
+ <Region name="Betreff">
+  <Left distance="56692.0mpt" anchorSide="same"></Left>
+  <Top distance="243779.0mpt" anchorSide="same"></Top>
+  <Right distance="425196.0mpt" anchorSide="opposite"></Right>
+  <Bottom distance="289133.0mpt" anchorSide="opposite"></Bottom>
+ </Region>
+ <Region name="Datum">
+  <Left distance="5.8cm" anchorSide="opposite"></Left>
+  <Top distance="9.7cm" anchorSide="same"></Top>
+  <Right distance="2.0cm" anchorSide="same"></Right>
+  <Bottom distance="10.2cm" anchorSide="opposite"></Bottom>
+ </Region>
+ <Region name="Body">
+  <Left distance="2.0cm" anchorSide="same"></Left>
+  <Top distance="11.2cm" anchorSide="same"></Top>
+  <Right distance="2.0cm" anchorSide="same"></Right>
+  <Bottom distance="2.2cm" anchorSide="same"></Bottom>
+ </Region>
+ <Region name="HRA">
+  <Left distance="2.0cm" anchorSide="same"></Left>
+  <Top distance="1.8cm" anchorSide="opposite"></Top>
+  <Right distance="2.0cm" anchorSide="same"></Right>
+  <Bottom distance="0.5cm" anchorSide="same"></Bottom>
+ </Region>
+</PageLayout>

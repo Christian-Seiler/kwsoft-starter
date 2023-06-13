@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mapping>
+   <DataModel root-path="">\\MyOMS\Daten\Brief.datamodel</DataModel>
+   <Rules>
+      <Rule copySubtree="false" name="/Brief" xpath="/schreiben/document"/>
+      <Rule copySubtree="false" name="/Brief/Dokument" xpath="."/>
+      <Rule copySubtree="true" name="/Brief/Dokument/Betreff1" xpath="betreff1"/>
+      <Rule copySubtree="true" name="/Brief/Dokument/Betreff2" xpath="betreff2"/>
+      <Rule copySubtree="true" name="/Brief/Dokument/id" xpath="id"/>
+      <Rule copySubtree="true" name="/Brief/Kunde" xpath="/schreiben/kunde"/>
+   </Rules>
+   <Params/>
+   <Namespaces/>
+</Mapping>

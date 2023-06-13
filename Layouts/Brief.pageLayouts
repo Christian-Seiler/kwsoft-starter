@@ -1,0 +1,11 @@
+<PageLayouts xmlns="urn:kwsoft:mtext:tonic:dom">
+ <First parentRef="Layouts\BriefErsteSeite.pageLayout">
+  <PageSize name="A4"></PageSize>
+  <Landscape>false</Landscape>
+  <RendererMetadata></RendererMetadata>
+ </First>
+ <DefaultPageLayout parentRef="Layouts\BriefStandard.pageLayout">
+  <PageSize name="A4"></PageSize>
+  <RendererMetadata></RendererMetadata>
+ </DefaultPageLayout>
+</PageLayouts>

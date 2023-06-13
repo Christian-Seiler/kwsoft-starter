@@ -1,0 +1,97 @@
+<StyleCollection xmlns="urn:kwsoft:mtext:tonic:dom">
+ <SectionStyle name="Brief">
+  <PageLayouts parentRef="Layouts\Brief.pageLayouts" />
+ </SectionStyle>
+ <TableStyle name="Grid">
+  <RowStyle>
+   <CellStyle>
+    <Padding top="0.05cm" right="0.3cm" bottom="0.05cm" left="0.3cm" />
+    <Border>
+     <Left width="500.0mpt" color="rgb(0,0,0)" style="solid" />
+     <Top width="500.0mpt" color="rgb(0,0,0)" style="solid" />
+     <Right width="500.0mpt" color="rgb(0,0,0)" style="solid" />
+     <Bottom width="500.0mpt" color="rgb(0,0,0)" style="solid" />
+    </Border>
+   </CellStyle>
+  </RowStyle>
+  <SpaceBefore resolution="combine">0.5cm</SpaceBefore>
+ </TableStyle>
+ <TableStyle name="Stripes" parentName="Grid">
+  <TableHeaderStyle>
+   <RowStyle>
+    <BackgroundColor>rgb(224,224,224)</BackgroundColor>
+   </RowStyle>
+  </TableHeaderStyle>
+  <RowStyle index="even">
+   <BackgroundColor>rgb(237,237,237)</BackgroundColor>
+  </RowStyle>
+ </TableStyle>
+ <TableStyle name="Stripes 2" parentName="Grid">
+  <TableHeaderStyle>
+   <RowStyle>
+    <CellStyle>
+     <ContainerStyle>
+      <ParStyle>
+       <SpanStyle>
+        <TextColor>rgb(255,255,255)</TextColor>
+       </SpanStyle>
+      </ParStyle>
+     </ContainerStyle>
+    </CellStyle>
+    <BackgroundColor>rgb(227,0,24)</BackgroundColor>
+   </RowStyle>
+  </TableHeaderStyle>
+  <RowStyle index="even">
+   <BackgroundColor>rgb(251,153,162)</BackgroundColor>
+  </RowStyle>
+ </TableStyle>
+ <ParStyle name="Normal">
+  <SpanStyle>
+   <FontSize>12000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <Align>left</Align>
+  <LeftIndent>0.0mpt</LeftIndent>
+  <RightIndent>0.0mpt</RightIndent>
+ </ParStyle>
+ <ParStyle name="Heading 1">
+  <SpanStyle>
+   <FontSize>16000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Heading 2">
+  <SpanStyle>
+   <FontSize>14000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+   <FontStyle>bold</FontStyle>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Heading 3">
+  <SpanStyle>
+   <FontSize>13000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+   <FontStyle>bold</FontStyle>
+   <TextColor>rgb(102,102,102)</TextColor>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+ <ParStyle name="Heading 4">
+  <SpanStyle>
+   <FontSize>12000.0mpt</FontSize>
+   <FontFamily>SANS</FontFamily>
+   <FontStyle>underlined</FontStyle>
+  </SpanStyle>
+  <Align>left</Align>
+  <SpaceBefore resolution="combine">0.15cm</SpaceBefore>
+  <SpaceAfter resolution="combine">0.15cm</SpaceAfter>
+ </ParStyle>
+</StyleCollection>

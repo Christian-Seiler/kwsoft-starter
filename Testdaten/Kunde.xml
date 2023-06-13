@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schreiben>
+  <anzeige></anzeige>
+  <document>
+    <type></type>
+    <id>101010</id>
+    <betreff1>Bla</betreff1>
+    <betreff2>bla...</betreff2>
+  </document>
+  <kunde>
+    <kundennummer>234567890</kundennummer>
+    <anrede>Herr</anrede>
+    <titel>Dr.</titel>
+    <vorname>Hans</vorname>
+    <nachname>Muster</nachname>
+    <strasse>Bundesgasse 35</strasse>
+    <plz>3000</plz>
+    <ort>Bern</ort>
+    <bankverbindung>
+      <inhaber>Hans Muster</inhaber>
+      <bank>Raiffeisen</bank>
+      <bic>RAIFCH0000</bic>
+      <iban>CH10111111111111</iban>
+    </bankverbindung>
+  </kunde>
+  <sachbearbeiter>
+    <anrede>Frau</anrede>
+    <vorname>Vreni</vorname>
+    <nachname>Meier</nachname>
+    <telefon>031 000 00 00</telefon>
+    <komplettname>Vreni Meier</komplettname>
+  </sachbearbeiter>
+</schreiben>
